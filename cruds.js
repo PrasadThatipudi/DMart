@@ -1,3 +1,7 @@
 const search = (items, itemId) =>
   items.find(({ itemId: id }) => id === itemId) || {};
-export const cruds = { search };
+
+const sort = (items, key) =>
+  items.toSorted(({ [key]: k1 }, { [key]: k2 }) => k1 - k2);
+
+export const cruds = { search, sort };

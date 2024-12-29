@@ -42,6 +42,11 @@ const testCases = [
       price: 9000,
     },
   ],
+  [
+    cruds.sort,
+    [[{ price: 2000 }, { price: 1000 }], "price"],
+    [{ price: 1000 }, { price: 2000 }],
+  ],
 ];
 
 testExecuter(testCases);
