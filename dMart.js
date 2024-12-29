@@ -1,5 +1,4 @@
 import { items } from "./items.js";
-import { testExecuter } from "../../assignments/test_framework/test.js";
 
 const displayItems = (items) => console.table(items);
 
@@ -16,8 +15,3 @@ const main = function (items) {
 };
 
 main(items);
-
-// ----------------- Test Fragment -----------------
-const testCases = [[]];
-
-testExecuter(testCases);
